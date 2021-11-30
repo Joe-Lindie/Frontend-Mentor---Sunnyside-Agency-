@@ -135,7 +135,7 @@ li.nav-item {
 /* Start: Services Page Mobile */
 .box {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 .box .img-text {
   position: absolute;
@@ -210,6 +210,7 @@ li.nav-item {
 }
 .Random-img {
   width: 50vw;
+  display: block;
 }
 /* End: The four random picture */
 /* Start: Footer Section */
@@ -245,6 +246,14 @@ li.nav-item {
 /* End: Footer Section */
 
 /* Desktop view! */
+
+@media (min-width: 750px) {
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 @media (min-width: 750px) {
   .nav-list {
     display: flex;
@@ -255,6 +264,9 @@ li.nav-item {
 @media (min-width: 750px) {
   .nav-item {
     margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 @media (min-width: 750px) {
@@ -276,13 +288,20 @@ li.nav-item {
 }
 @media (min-width: 750px) {
   li:nth-child(4) {
-    background-color: var(--Very-dark-blue);
+    background-color: var(--white);
     border-radius: 20px;
     padding: 8px;
     padding-left: 20px;
     padding-right: 20px;
   }
 }
+
+@media (min-width: 750px) {
+  li:nth-child(4) a {
+    color: black;
+  }
+}
+
 @media (min-width: 750px) {
   .logo {
     display: flex;
